@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReservasDataSet" targetNamespace="http://tempuri.org/ReservasDataSet.xsd" xmlns:mstns="http://tempuri.org/ReservasDataSet.xsd" xmlns="http://tempuri.org/ReservasDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReservasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReservasDataSet" msprop:Generator_UserDSName="ReservasDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Reservas" msprop:Generator_TableClassName="ReservasDataTable" msprop:Generator_TableVarName="tableReservas" msprop:Generator_TablePropName="Reservas" msprop:Generator_RowDeletingName="ReservasRowDeleting" msprop:Generator_UserTableName="Reservas" msprop:Generator_RowChangingName="ReservasRowChanging" msprop:Generator_RowEvHandlerName="ReservasRowChangeEventHandler" msprop:Generator_RowDeletedName="ReservasRowDeleted" msprop:Generator_RowEvArgName="ReservasRowChangeEvent" msprop:Generator_RowChangedName="ReservasRowChanged" msprop:Generator_RowClassName="ReservasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Voo" msprop:Generator_ColumnVarNameInTable="columnVoo" msprop:Generator_ColumnPropNameInRow="Voo" msprop:Generator_ColumnPropNameInTable="VooColumn" msprop:Generator_UserColumnName="Voo" type="xs:string" minOccurs="0" />
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:string" minOccurs="0" />
+              <xs:element name="Assento" msprop:Generator_ColumnVarNameInTable="columnAssento" msprop:Generator_ColumnPropNameInRow="Assento" msprop:Generator_ColumnPropNameInTable="AssentoColumn" msprop:Generator_UserColumnName="Assento" type="xs:string" minOccurs="0" />
+              <xs:element name="Cpf" msprop:Generator_ColumnVarNameInTable="columnCpf" msprop:Generator_ColumnPropNameInRow="Cpf" msprop:Generator_ColumnPropNameInTable="CpfColumn" msprop:Generator_UserColumnName="Cpf" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8F81B73-10BF-425B-82D6-DDADAF1CA503}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompanhiaAerea</RootNamespace>
+    <AssemblyName>CompanhiaAerea</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AeroportoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AeroportoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AviaoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AviaoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClienteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AeroportoDAO.cs" />
+    <Compile Include="DAO\AviaoDAO.cs" />
+    <Compile Include="DAO\ClienteDAO.cs" />
+    <Compile Include="DAO\PilotoDAO.cs" />
+    <Compile Include="DAO\ReservasDAO.cs" />
+    <Compile Include="DAO\VoosDAO.cs" />
+    <Compile Include="FrmAviao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAviao.Designer.cs">
+      <DependentUpon>FrmAviao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bean\Aeroportos.cs" />
+    <Compile Include="Bean\Aviao.cs" />
+    <Compile Include="Bean\Cliente.cs" />
+    <Compile Include="Bean\Piloto.cs" />
+    <Compile Include="Bean\Reservas.cs" />
+    <Compile Include="Bean\Voos.cs" />
+    <Compile Include="FrmAeroportos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAeroportos.Designer.cs">
+      <DependentUpon>FrmAeroportos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultas.Designer.cs">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPilotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPilotos.Designer.cs">
+      <DependentUpon>FrmPilotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgramacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgramacao.Designer.cs">
+      <DependentUpon>FrmProgramacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReservas.Designer.cs">
+      <DependentUpon>FrmReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVoos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVoos.Designer.cs">
+      <DependentUpon>FrmVoos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PilotoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PilotoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramacaoReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgramacaoReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VoosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoosDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAviao.resx">
+      <DependentUpon>FrmAviao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAeroportos.resx">
+      <DependentUpon>FrmAeroportos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPilotos.resx">
+      <DependentUpon>FrmPilotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgramacao.resx">
+      <DependentUpon>FrmProgramacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReservas.resx">
+      <DependentUpon>FrmReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVoos.resx">
+      <DependentUpon>FrmVoos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramacaoReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProgramacaoReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AeroportoDataSet.xsc">
+      <DependentUpon>AeroportoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AeroportoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AeroportoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AeroportoDataSet.xss">
+      <DependentUpon>AeroportoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="AviaoDataSet.xsc">
+      <DependentUpon>AviaoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AviaoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AviaoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AviaoDataSet.xss">
+      <DependentUpon>AviaoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClienteDataSet.xsc">
+      <DependentUpon>ClienteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClienteDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClienteDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ClienteDataSet.xss">
+      <DependentUpon>ClienteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PilotoDataSet.xsc">
+      <DependentUpon>PilotoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PilotoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PilotoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PilotoDataSet.xss">
+      <DependentUpon>PilotoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReservasDataSet.xsc">
+      <DependentUpon>ReservasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReservasDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservasDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReservasDataSet.xss">
+      <DependentUpon>ReservasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoosDataSet.xsc">
+      <DependentUpon>VoosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoosDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoosDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VoosDataSet.xss">
+      <DependentUpon>VoosDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anac.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
